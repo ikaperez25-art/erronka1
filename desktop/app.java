@@ -8,12 +8,14 @@ public class app {
 
 ArrayList<String> astekoegunak=new ArrayList<String>();
 
+System.out.println("Kaixo ongi etorria ZinemaUsurbilera:")
 astekoegunak.add("Astelehena");
 astekoegunak.add("Asteartea");
 astekoegunak.add("Asteazkena");
 astekoegunak.add("Osteguna");
 astekoegunak.add("Ostirala");
 astekoegunak.add("Larunbata");
+
 
 Scanner sc=new Scanner(System.in);
 System.out.println("Aukeratu asteko eguna");
