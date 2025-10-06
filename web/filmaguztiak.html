@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ares Perez">
+  <meta name="description" content="Zinema Usurbil webgunea">
+  <title>Filma guztiak</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    body {
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #333;
+    }
+
+
+    .atzerakobotoia {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #444;
+      color: white;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .atzerakobotoia:hover {
+      background-color: #222;
+      transform: scale(1.05);
+    }
+
+    .material-icons {
+      font-size: 26px;
+      color: white;
+    }
+
+  
+    header {
+      text-align: center;
+      padding: 40px 20px 20px 20px;
+      background: linear-gradient(135deg, #777, #555);
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+
+    header h2 {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+
+    .filmguztiakk {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      flex-grow: 1;
+    }
+
+    .filmguztiakk a {
+      text-decoration: none;
+    }
+
+    .filmguztiakk img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .filmguztiakk img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px 20px 20px;
+      background: linear-gradient(135deg, #777, #555);
+      font-size: 0.9rem;
+      color: #ffffff;
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="portada.html" class="atzerakobotoia">
+    <span class="material-icons">arrow_back</span>
+  </a>
+
+  <header>
+    <h1>Filma guztiak</h1>
+    <h2>Klikatu film batean informazio gehiago ikusteko</h2>
+  </header>
+
+  <section class="filmguztiakk">
+    <a href="film1informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma1.png" alt="film1">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Expediente Warren</p>
+      </div>
+    </a>
+    <a href="film2informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma2.png" alt="film2">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Una batalla tras otra</p>
+      </div>
+    </a>
+    <a href="film3informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma3.png" alt="film3">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Cautivo</p>
+      </div>
+    </a>
+    <a href="film4informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma4.png" alt="film4">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">La fortaleza infinita</p>
+      </div>
+    </a>
+    <a href="film5informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma5.png" alt="film5">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Cuidado con lo que dibujas</p>
+      </div>
+    </a>
+    <a href="film6informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma6.png" alt="film6">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Avatar el sentido del agua</p>
+      </div>
+    </a>
+    <a href="film7informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma7.png" alt="film7">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Strangers 2</p>
+      </div>
+    </a>
+    <a href="film8informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma8.png" alt="film8">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Afterburn</p>
+      </div>
+    </a>
+    <a href="film9informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma9.png" alt="film9">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Como entrenar a tu dragon</p>
+      </div>
+    </a>
+    <a href="film10informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma10.png" alt="film10">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Los 4 fantasticos</p>
+      </div>
+    </a>
+    <a href="film11informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma11.png" alt="filma11">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Star Wars the force awakens</p>
+      </div>
+    </a>
+    <a href="film12informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma12.png" alt="film12">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Dark phoenix</p>
+      </div>
+    </a>
+    <a href="film13informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma13.png" alt="film13">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Logan</p>
+      </div>
+    </a>
+    <a href="film14informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma14.png" alt="film14">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Celda 211</p>
+      </div>
+    </a>
+    <a href="film15informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma15.png" alt="film15">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Fractured</p>
+      </div>
+    </a>
+    <a href="film16informazioa.html" target="_blank">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="img/filmenargazkiak/filma16.png" alt="film16">
+        <p style="margin-top: 10px; min-height: 2.2em; text-align: center;">Pulp fiction</p>
+      </div>
+    </a>
+
+
+  </section>
+
+  <footer>
+    <p>© 2025 Zinema Usurbil - Ares Perez</p>
+  </footer>
+</body>       
+
+</html>
