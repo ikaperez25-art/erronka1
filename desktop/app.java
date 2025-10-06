@@ -8,7 +8,7 @@ public class app {
 
 ArrayList<String> astekoegunak=new ArrayList<String>();
 
-System.out.println("Kaixo ongi etorria ZinemaUsurbilera:")
+System.out.println("Kaixo ongi etorria ZinemaUsurbilera_:")
 astekoegunak.add("Astelehena");
 astekoegunak.add("Asteartea");
 astekoegunak.add("Asteazkena");
