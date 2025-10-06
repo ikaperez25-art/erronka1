@@ -109,7 +109,7 @@ String izenagela = gelenIzena.get(gelaAleatorioa);
             }
         }
 
-
+//Informazio orokorra aukeratuta 
         ArrayList<String>informazioorokorra = new ArrayList<>();
         informazioorokorra.add("Lilo y Stitch");
         informazioorokorra.add("Una película de Minecraft");
@@ -127,8 +127,7 @@ String izenagela = gelenIzena.get(gelaAleatorioa);
         informazioorokorra.add("Un funeral de locos");
         informazioorokorra.add("Sirāt");
 
-
-System.out.println(informazioorokorra.size());
+        System.out.println(informazioorokorra.size());
 
         sc.close();
 
