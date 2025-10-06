@@ -109,6 +109,33 @@ String izenagela = gelenIzena.get(gelaAleatorioa);
             }
         }
 
+
+        ArrayList<String>informazioorokorra = new ArrayList<>();
+        informazioorokorra.add("Lilo y Stitch");
+        informazioorokorra.add("Una película de Minecraft");
+        informazioorokorra.add("Mufasa: El rey león");
+        informazioorokorra.add("Cómo entrenar a tu dragón");
+        informazioorokorra.add("Capitán América: Brave New World");
+        informazioorokorra.add("Conclave");
+        informazioorokorra.add("Sonic 3: La película");
+        informazioorokorra.add("Misión: Imposible. Sentencia Final");
+        informazioorokorra.add("Blancanieves");
+        informazioorokorra.add("Thunderbolt");
+        informazioorokorra.add("Padre no hay más que uno 5");
+        informazioorokorra.add("Wolfgang (Extraordinario)");
+        informazioorokorra.add("El casoplón");
+        informazioorokorra.add("Un funeral de locos");
+        informazioorokorra.add("Sirāt");
+
+
+System.out.println(informazioorokorra.size());
+
         sc.close();
+
+
+
+
+
+
     }
 }
