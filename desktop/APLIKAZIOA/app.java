@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 public class app {
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_RED = "\u001B[31m";
@@ -140,8 +139,6 @@ public class app {
                 for (String p : thrillergela)
                     System.out.println("- " + p);
 
-
-
             } else if (astekoegunaaukeratuta.equals("Osteguna")) {
                 System.out.println(astekoegunaaukeratuta + "ko gelak eta pelikulak hauek dira:");
                 System.out.println(gelenIzena.get(1) + ":");
@@ -159,11 +156,9 @@ public class app {
                 System.out.println(gelenIzena.get(3) + ": ");
                 for (String p : zientziafikziogela)
                     System.out.println("- " + p);
-                    System.out.println(gelenIzena.get(4) +":");
+                System.out.println(gelenIzena.get(4) + ":");
                 for (String p : komediagela)
                     System.out.println("- " + p);
-
-
 
             } else if (astekoegunaaukeratuta.equals("Larunbata")) {
                 System.out.println(astekoegunaaukeratuta + "ko gelak eta pelikulak hauek dira:");
@@ -173,21 +168,27 @@ public class app {
                 System.out.println(gelenIzena.get(2) + ":");
                 for (String p : thrillergela)
                     System.out.println("- " + p);
- System.out.println(gelenIzena.get(4) + ":");
+                System.out.println(gelenIzena.get(4) + ":");
                 for (String p : komediagela)
                     System.out.println("- " + p);
 
-            }   else if (astekoegunaaukeratuta.equals("Igandea")) {
+            } else if (astekoegunaaukeratuta.equals("Igandea")) {
                 System.out.println(astekoegunaaukeratuta + "ko gelak eta pelikulak hauek dira:");
                 System.out.println(gelenIzena.get(0) + ":");
-                for (String p : umeengela) System.out.println("- " + p);
+                for (String p : umeengela)
+                    System.out.println("- " + p);
                 System.out.println(gelenIzena.get(4) + ":");
-                for (String p : komediagela) System.out.println("- " + p);
+                for (String p : komediagela)
+                    System.out.println("- " + p);
             }
 
             else {
                 System.out.println("Egun honetan ez dago pelikularik proiektatzeko.");
             }
+            ArrayList<ArrayList<String>> egunekogela = new ArrayList<>();
+            ArrayList<String> egunekogelenizena = new ArrayList<>();
+            ArrayList<ArrayList<Integer>> egunekogelenstocka = new ArrayList<>();
+
         }
 
         // Informazio orokorra aukeratuta
@@ -249,9 +250,38 @@ public class app {
                     komediagelastocka.add(4);
                 }
                 gelenstocka.add(komediagelastocka);
-            }
-        }
 
-        sc.close();
+                // filma eta gela aukeratzeko gauza
+
+                System.out.println("Aukeratu gela");
+
+                for (int i = 0; i < gelenIzena.size(); i++) {
+                    System.out.println((i + 1) + "." + gelenIzena.get(i));
+                }
+                int aukeratutakogela = sc.nextInt() - 1;
+
+                System.out.println(" Aukeratu filma ");
+                ArrayList<String> filmak = gelak.get(aukeratutakogela);
+                ArrayList<Integer> filmenstocka = gelenstocka.get(aukeratutakogela);
+                for(int i =0;i<filmak.size();i++){
+                    System.out.println((i+1)+"."+filmak.get(i)+"   Stock:"+ filmenstocka.get(i)+")");
+                }
+                int aukeratutakofilma= sc.nextInt()-1;
+
+
+                System.out.println("Zenbat sarrera nahi dituzu");
+                int sarrerak=sc.nextInt();
+
+                if(sarrerak<=filmenstocka.get(aukeratutakofilma)){
+                    filmenstocka.set(aukeratutakofilma,filmenstocka.get(aukeratutakofilma)-sarrerak);
+                    System.out.println("Erosketa ondo egin da");
+                    System.out.println("Geratzen den stocka:"+filmenstocka.get(aukeratutakofilma));
+
+                }else{
+                    System.out.println("Sartutako sarrera kantitatea ez dugu disponible");
+                }
+            }
+
+        }
     }
 }
