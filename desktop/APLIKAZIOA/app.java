@@ -2,8 +2,22 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
 
-public class app {
+public class app{
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
+public static final String ANSI_GREEN = "\u001B[32m";
+public static final String ANSI_YELLOW = "\u001B[33m";
+public static final String ANSI_BLUE = "\u001B[34m";
+public static final String ANSI_PURPLE = "\u001B[35m";
+public static final String ANSI_CYAN = "\u001B[36m";
+public static final String ANSI_WHITE = "\u001B[37m"; 
+  public static final String ANSI_BLACK = "\u001B[30m";
+  public static final String ROSA = "\u001B[38;5;205m"; 
+
+
     public static void main(String[] args) {
+       
+
         ArrayList<String> hasierakomenua = new ArrayList<String>();
         hasierakomenua.add("Asteko egunak");
         hasierakomenua.add("Informazio orokorra");
@@ -58,41 +72,41 @@ ArrayList<String> gelenIzena= new ArrayList<>();
             //Lista de las gelas
             //Primera gela 1Umeen gela
             ArrayList<String> umeengela = new ArrayList<>();
-            umeengela.add("Lilo y Stitch");
-            umeengela.add("Una pelicula de Minecraft");
-            umeengela.add("Mufasa:El rey leon");
-            umeengela.add("Como entrenar a tu dragon");
-            umeengela.add("Sonic 3: La pelicula");
-            umeengela.add("Blancanieves");
+            umeengela.add(ANSI_CYAN+"Lilo y Stitch"+ANSI_RESET);
+            umeengela.add(ANSI_CYAN+"Una pelicula de Minecraft"+ANSI_RESET);
+            umeengela.add(ANSI_CYAN+"Mufasa:El rey leon"+ANSI_RESET);
+            umeengela.add(ANSI_CYAN+"Como entrenar a tu dragon"+ANSI_RESET);
+            umeengela.add(ANSI_CYAN+"Sonic 3: La pelicula"+ANSI_RESET);
+            umeengela.add(ANSI_CYAN+"Blancanieves"+ANSI_RESET);
             gelak.add(umeengela);
             gelenIzena.add("Umeen gela");
 
             //Segunda gela  Superheroien gela
             ArrayList<String> superheroigela = new ArrayList<String>();
-            superheroigela.add("Capitán América: Brave New World");
-            superheroigela.add("Thunderbolt");
+            superheroigela.add(ANSI_GREEN+"Capitán América: Brave New World"+ANSI_RESET);
+            superheroigela.add(ANSI_GREEN+"Thunderbolt"+ANSI_RESET);
             gelak.add(superheroigela);
             gelenIzena.add("Superheroien gela");
 
             //Tercera gela  Thriller gela
             ArrayList<String> thrillergela = new ArrayList<String>();
-            thrillergela.add("Conclave");
-            thrillergela.add("Misión: Imposible. Sentencia Final");
-            thrillergela.add("Sirāt");
+            thrillergela.add(ANSI_PURPLE+"Conclave"+ANSI_RESET);
+            thrillergela.add(ANSI_PURPLE+"Misión: Imposible. Sentencia Final"+ANSI_RESET);
+            thrillergela.add(ANSI_PURPLE+"Sirāt"+ANSI_RESET);
             gelak.add(thrillergela);
             gelenIzena.add("Thriller gela");
 
             //Cuarta gela  Zientzia fikzio gela
             ArrayList<String> zientziafikziogela = new ArrayList<String>();
-            zientziafikziogela.add("Wolfgang");
+            zientziafikziogela.add(ANSI_YELLOW+"Wolfgang"+ANSI_RESET);
             gelak.add(zientziafikziogela);
             gelenIzena.add("Zientzia fikzio gela");
 
             //Quinta gela  Komedia gela
             ArrayList<String> komediagela = new ArrayList<String>();
-            komediagela.add("Padre no hay más que uno 5");
-            komediagela.add("El casoplon");
-            komediagela.add("Un funeral de locos");
+            komediagela.add(ANSI_BLUE+"Padre no hay más que uno 5"+ANSI_RESET);
+            komediagela.add(ANSI_BLUE+"El casoplon"+ANSI_RESET);
+            komediagela.add(ANSI_BLUE+"Un funeral de locos"+ANSI_RESET);
             gelak.add(komediagela);
             gelenIzena.add("Komedia gela");
 
@@ -110,31 +124,35 @@ String izenagela = gelenIzena.get(gelaAleatorioa);
         }
 
 //Informazio orokorra aukeratuta 
-        ArrayList<String>informazioorokorra = new ArrayList<>();
-        informazioorokorra.add("Lilo y Stitch");
-        informazioorokorra.add("Una película de Minecraft");
-        informazioorokorra.add("Mufasa: El rey león");
-        informazioorokorra.add("Cómo entrenar a tu dragón");
-        informazioorokorra.add("Capitán América: Brave New World");
-        informazioorokorra.add("Conclave");
-        informazioorokorra.add("Sonic 3: La película");
-        informazioorokorra.add("Misión: Imposible. Sentencia Final");
-        informazioorokorra.add("Blancanieves");
-        informazioorokorra.add("Thunderbolt");
-        informazioorokorra.add("Padre no hay más que uno 5");
-        informazioorokorra.add("Wolfgang (Extraordinario)");
-        informazioorokorra.add("El casoplón");
-        informazioorokorra.add("Un funeral de locos");
-        informazioorokorra.add("Sirāt");
-
+if (hasierakomenuaaukera.equals("Informazio orokorra")) {
+        ArrayList<String>informazioorokorra = new ArrayList<String>();
+        informazioorokorra.add(ANSI_CYAN+"Lilo y Stitch"+ANSI_RESET);
+        informazioorokorra.add(ANSI_CYAN+"Una pelicula de Minecraft"+ANSI_RESET);
+        informazioorokorra.add();
+        informazioorokorra.add();
+        informazioorokorra.add();
+        informazioorokorra.add();
+        informazioorokorra.add();
+        informazioorokorra.add();
+        informazioorokorra.add();
+        informazioorokorra.add();
+        informazioorokorra.add();
+        informazioorokorra.add();
+        informazioorokorra.add();
+        informazioorokorra.add();
+        informazioorokorra.add();
+System.out.println("Huaek dira gaurko filmak:");
+System.out.println(informazioorokorra);
         System.out.println(informazioorokorra.size());
 
         sc.close();
 
+        
 
 
 
 
 
     }
+}
 }
