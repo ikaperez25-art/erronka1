@@ -90,9 +90,9 @@ ArrayList<String> gelenIzena= new ArrayList<>();
 
             //Tercera gela  Thriller gela
             ArrayList<String> thrillergela = new ArrayList<String>();
-            thrillergela.add(ANSI_PURPLE+"Conclave"+ANSI_RESET);
-            thrillergela.add(ANSI_PURPLE+"Misión: Imposible. Sentencia Final"+ANSI_RESET);
-            thrillergela.add(ANSI_PURPLE+"Sirāt"+ANSI_RESET);
+            thrillergela.add(ANSI_RED+"Conclave"+ANSI_RESET);
+            thrillergela.add(ANSI_RED+"Misión: Imposible. Sentencia Final"+ANSI_RESET);
+            thrillergela.add(ANSI_RED+"Sirāt"+ANSI_RESET);
             gelak.add(thrillergela);
             gelenIzena.add("Thriller gela");
 
@@ -104,9 +104,9 @@ ArrayList<String> gelenIzena= new ArrayList<>();
 
             //Quinta gela  Komedia gela
             ArrayList<String> komediagela = new ArrayList<String>();
-            komediagela.add(ANSI_BLUE+"Padre no hay más que uno 5"+ANSI_RESET);
-            komediagela.add(ANSI_BLUE+"El casoplon"+ANSI_RESET);
-            komediagela.add(ANSI_BLUE+"Un funeral de locos"+ANSI_RESET);
+            komediagela.add(ANSI_PURPLE+"Padre no hay más que uno 5"+ANSI_RESET);
+            komediagela.add(ANSI_PURPLE+"El casoplon"+ANSI_RESET);
+            komediagela.add(ANSI_PURPLE+"Un funeral de locos"+ANSI_RESET);
             gelak.add(komediagela);
             gelenIzena.add("Komedia gela");
 
@@ -128,22 +128,22 @@ if (hasierakomenuaaukera.equals("Informazio orokorra")) {
         ArrayList<String>informazioorokorra = new ArrayList<String>();
         informazioorokorra.add(ANSI_CYAN+"Lilo y Stitch"+ANSI_RESET);
         informazioorokorra.add(ANSI_CYAN+"Una pelicula de Minecraft"+ANSI_RESET);
-        informazioorokorra.add();
-        informazioorokorra.add();
-        informazioorokorra.add();
-        informazioorokorra.add();
-        informazioorokorra.add();
-        informazioorokorra.add();
-        informazioorokorra.add();
-        informazioorokorra.add();
-        informazioorokorra.add();
-        informazioorokorra.add();
-        informazioorokorra.add();
-        informazioorokorra.add();
-        informazioorokorra.add();
+        informazioorokorra.add(ANSI_CYAN+"Mufasa:El rey leon"+ANSI_RESET);
+        informazioorokorra.add(ANSI_CYAN+"Como entrenar a tu dragon"+ANSI_RESET);
+        informazioorokorra.add(ANSI_CYAN+"Sonic 3: La pelicula"+ANSI_RESET);
+        informazioorokorra.add(ANSI_CYAN+"Blancanieves"+ANSI_RESET);
+        informazioorokorra.add(ANSI_GREEN+"Capitán América: Brave New World"+ANSI_RESET);
+        informazioorokorra.add(ANSI_GREEN+"Thunderbolt"+ANSI_RESET);
+        informazioorokorra.add(ANSI_RED+"Conclave"+ANSI_RESET);
+        informazioorokorra.add(ANSI_RED+"Misión: Imposible. Sentencia Final"+ANSI_RESET);
+        informazioorokorra.add(ANSI_RED+"Sirāt"+ANSI_RESET);
+        informazioorokorra.add(ANSI_YELLOW+"Wolfgang"+ANSI_RESET);
+        informazioorokorra.add(ANSI_PURPLE+"Padre no hay más que uno 5"+ANSI_RESET);
+        informazioorokorra.add(ANSI_PURPLE+"El casoplon"+ANSI_RESET);
+        informazioorokorra.add(ANSI_PURPLE+"Un funeral de locos"+ANSI_RESET);
 System.out.println("Huaek dira gaurko filmak:");
 System.out.println(informazioorokorra);
-        System.out.println(informazioorokorra.size());
+        System.out.println("Filma kopurua:"+informazioorokorra.size());
 
         sc.close();
 
