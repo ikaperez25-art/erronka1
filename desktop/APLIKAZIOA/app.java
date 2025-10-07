@@ -263,22 +263,23 @@ public class app {
                 System.out.println(" Aukeratu filma ");
                 ArrayList<String> filmak = gelak.get(aukeratutakogela);
                 ArrayList<Integer> filmenstocka = gelenstocka.get(aukeratutakogela);
-                for(int i =0;i<filmak.size();i++){
-                    System.out.println((i+1)+"."+filmak.get(i)+"   Stock:"+ filmenstocka.get(i)+")");
+                for (int i = 0; i < filmak.size(); i++) {
+                    System.out.println((i + 1) + "." + filmak.get(i) + "   Stock:" + filmenstocka.get(i) + ")");
                 }
-                int aukeratutakofilma= sc.nextInt()-1;
-
+                int aukeratutakofilma = sc.nextInt() - 1;
+                // lo de comprar sarreras
 
                 System.out.println("Zenbat sarrera nahi dituzu");
-                int sarrerak=sc.nextInt();
+                int sarrerak = sc.nextInt();
 
-                if(sarrerak<=filmenstocka.get(aukeratutakofilma)){
-                    filmenstocka.set(aukeratutakofilma,filmenstocka.get(aukeratutakofilma)-sarrerak);
+                if (sarrerak <= filmenstocka.get(aukeratutakofilma) || sarrerak >= 1) {
+                    filmenstocka.set(aukeratutakofilma, filmenstocka.get(aukeratutakofilma) - sarrerak);
                     System.out.println("Erosketa ondo egin da");
-                    System.out.println("Geratzen den stocka:"+filmenstocka.get(aukeratutakofilma));
+                    System.out.println("Geratzen den stocka:" + filmenstocka.get(aukeratutakofilma));
 
-                }else{
+                } else {
                     System.out.println("Sartutako sarrera kantitatea ez dugu disponible");
+                    sc.close();
                 }
             }
 
