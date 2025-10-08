@@ -63,8 +63,8 @@ public class app {
         hasierakomenua.add("Asteko egunak");
         hasierakomenua.add("Informazio orokorra");
         hasierakomenua.add("Kokapena");
-        hasierakomenua.add("Irekiera ordua");
-        hasierakomenua.add("Itxi ordua");
+        hasierakomenua.add("Ordutegia");
+        hasierakomenua.add("Itxi");
 
         Scanner sc = new Scanner(System.in);
 
@@ -185,7 +185,12 @@ public class app {
             else {
                 System.out.println("Egun honetan ez dago pelikularik proiektatzeko.");
             }
-            ArrayList<ArrayList<String>> egunekogela = new ArrayList<>();
+
+            System.out.println("Aukeratu filma");
+
+
+            int aukeratutakofilmaeguneko =sc.nextInt();
+                        ArrayList<ArrayList<String>> egunekogela = new ArrayList<>();
             ArrayList<String> egunekogelenizena = new ArrayList<>();
             ArrayList<ArrayList<Integer>> egunekogelenstocka = new ArrayList<>();
 
@@ -217,8 +222,10 @@ public class app {
             for (String izena : gelenIzena) {
                 System.out.println("- " + izena);
 
-                // LAS GELAS PARA ACORDARME:UMEENGELA superheroigela THRILLER GELA zientzia
-                // fikzio gela komediagela
+                /*
+                 * LAS GELAS PARA ACORDARME:UMEENGELA superheroigela THRILLER GELA zientzia
+                 * fikzio gela komediagela
+                 */
                 ArrayList<ArrayList<Integer>> gelenstocka = new ArrayList<>();
 
                 ArrayList<Integer> umeengelakostocka = new ArrayList<>();
@@ -279,10 +286,31 @@ public class app {
 
                 } else {
                     System.out.println("Sartutako sarrera kantitatea ez dugu disponible");
+
+                }
+
+//Parte 4 lo de el horario
+
+if (hasierakomenua.toString().equals("Ordutegia")) {
+    System.out.println("Informazioa\n");
+    System.out.println("Asteleheneko ordutegia:#\n");
+    System.out.println("Astearteko ordutegia:#\n");
+    System.out.println("Asteazkeneko ordutegia:#\n");
+    System.out.println("Osteguneko ordutegia:#\n");
+    System.out.println("Ostiraleko ordutegia:#\n");
+    System.out.println("Larunbateko ordutegia:#\n");
+    System.out.println("Igandeko ordutegia:#\n");
+}
+
+
+                // Parte 5 del meu lo de cerrar
+
+                if (hasierakomenua.toString().equals("Itxi")) {
+
+                    System.exit(0);
                     sc.close();
                 }
             }
-
         }
     }
 }
