@@ -213,8 +213,8 @@ public class appreestructurar {
 
                 // filma eta gela aukeratzeko gauza
 
-                System.out.println("Aukeratu filma");
                 System.out.println("Aukeratu gela");
+                System.out.println("Aukeratu filma");
                 for (int i = 0; i < gelenIzena.size(); i++) {
                     System.out.println((i + 1) + "." + gelenIzena.get(i));
                 }
