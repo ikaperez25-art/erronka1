@@ -13,14 +13,13 @@ public class appreestructurar {
     public static final String ANSI_BLACK = "\u001B[30m";
     public static final String ROSA = "\u001B[38;5;205m";
 
-    ArrayList<ArrayList<String>> gelak = new ArrayList<ArrayList<String>>();
-    ArrayList<String> gelenIzena = new ArrayList<>();
-    ArrayList<ArrayList<Integer>> gelenstocka = new ArrayList<>();
+    public static void main(String[] args) {
 
+        ArrayList<ArrayList<String>> gelak = new ArrayList<ArrayList<String>>();
+        ArrayList<String> gelenIzena = new ArrayList<>();
+        ArrayList<ArrayList<Integer>> gelenstocka = new ArrayList<>();
 
-    
-   // Lista de las gelas
-        // Primera gela 1Umeen gela
+        // Umeen gela
         ArrayList<String> umeengela = new ArrayList<>();
         umeengela.add(ANSI_CYAN + "Lilo y Stitch" + ANSI_RESET);
         umeengela.add(ANSI_CYAN + "Una pelicula de Minecraft" + ANSI_RESET);
@@ -31,25 +30,26 @@ public class appreestructurar {
         gelak.add(umeengela);
         gelenIzena.add(ANSI_CYAN + "Umeen gela" + ANSI_RESET);
 
-        ArrayList<Integer>umeengelakostocka=new ArrayList<>();
-        for(int i = 0;i<umeengelakostocka;i++){
-        umeengelakostocka.add(4);  
+        ArrayList<Integer> umeengelakostocka = new ArrayList<>();
+        for (int i = 0; i < umeengela.size(); i++) {
+            umeengelakostocka.add(4);
         }
         gelenstocka.add(umeengelakostocka);
-        // Segunda gela Superheroien gela
 
+        // Superheoi gela
         ArrayList<String> superheroigela = new ArrayList<String>();
         superheroigela.add(ANSI_GREEN + "Capitán América: Brave New World" + ANSI_RESET);
         superheroigela.add(ANSI_GREEN + "Thunderbolt" + ANSI_RESET);
         gelak.add(superheroigela);
         gelenIzena.add(ANSI_GREEN + "Superheroien gela" + ANSI_RESET);
-        ArrayList<Integer>superheroigelakostocka=new ArrayList<>();
-        for(int i = 0;i<superheroigelakostocka;i++){
-        umeengelakostocka.add(4);  
-        }
-        gelenstocka.add(umeengelakostocka);
 
-        // Tercera gela Thriller gela
+        ArrayList<Integer> superheroigelastocka = new ArrayList<>();
+        for (int i = 0; i < superheroigela.size(); i++) {
+            superheroigelastocka.add(4);
+        }
+        gelenstocka.add(superheroigelastocka);
+
+        // Thriller gela
         ArrayList<String> thrillergela = new ArrayList<String>();
         thrillergela.add(ANSI_RED + "Conclave" + ANSI_RESET);
         thrillergela.add(ANSI_RED + "Misión: Imposible. Sentencia Final" + ANSI_RESET);
@@ -57,13 +57,25 @@ public class appreestructurar {
         gelak.add(thrillergela);
         gelenIzena.add(ANSI_RED + "Thriller gela" + ANSI_RESET);
 
-        // Cuarta gela Zientzia fikzio gela
+        ArrayList<Integer> thrillergelastocka = new ArrayList<>();
+        for (int i = 0; i < thrillergela.size(); i++) {
+            thrillergelastocka.add(4);
+        }
+        gelenstocka.add(thrillergelastocka);
+
+        // Laugarren gela zientzia fikzio
         ArrayList<String> zientziafikziogela = new ArrayList<String>();
         zientziafikziogela.add(ANSI_YELLOW + "Wolfgang" + ANSI_RESET);
         gelak.add(zientziafikziogela);
         gelenIzena.add(ANSI_YELLOW + "Zientzia fikzio gela" + ANSI_RESET);
 
-        // Quinta gela Komedia gela
+        ArrayList<Integer> zientziafikziogelastocka = new ArrayList<>();
+        for (int i = 0; i < zientziafikziogela.size(); i++) {
+            zientziafikziogelastocka.add(4);
+        }
+        gelenstocka.add(zientziafikziogelastocka);
+
+        // Komedia gela
         ArrayList<String> komediagela = new ArrayList<String>();
         komediagela.add(ANSI_PURPLE + "Padre no hay más que uno 5" + ANSI_RESET);
         komediagela.add(ANSI_PURPLE + "El casoplon" + ANSI_RESET);
@@ -71,4 +83,221 @@ public class appreestructurar {
         gelak.add(komediagela);
         gelenIzena.add(ANSI_PURPLE + "Komedia gela" + ANSI_RESET);
 
+        ArrayList<Integer> komediagelastocka = new ArrayList<>();
+        for (int i = 0; i < komediagela.size(); i++) {
+            komediagelastocka.add(4);
+        }
+        gelenstocka.add(komediagelastocka);
+
+        ArrayList<String> hasierakomenua = new ArrayList<String>();
+        hasierakomenua.add("Asteko egunak");
+        hasierakomenua.add("Informazio orokorra");
+        hasierakomenua.add("Kokapena");
+        hasierakomenua.add("Ordutegia");
+        hasierakomenua.add("Itxi");
+
+        Scanner sc = new Scanner(System.in);
+
+        boolean programaMartxan = true;
+        while (programaMartxan) {
+            System.out.println("\n MENU NAGUSIA:");
+            System.out.println("Aukeratu opzio bat:");
+            for (int i = 0; i < hasierakomenua.size(); i++) {
+                System.out.println((i + 1) + ". " + hasierakomenua.get(i));
+            }
+
+            int opzioa = sc.nextInt();
+            if (opzioa < 1 || opzioa > hasierakomenua.size()) {
+                System.out.println("Zenbakia ez da baliozkoa");
+                continue;
+            }
+
+            String hasierakomenuaaukera = hasierakomenua.get(opzioa - 1);
+            System.out.println("Aukeratu duzu " + hasierakomenuaaukera);
+
+            if (hasierakomenuaaukera.equals("Asteko egunak")) {
+                ArrayList<String> astekoegunak = new ArrayList<String>();
+                astekoegunak.add("Astelehena");
+                astekoegunak.add("Asteartea");
+                astekoegunak.add("Asteazkena");
+                astekoegunak.add("Osteguna");
+                astekoegunak.add("Ostirala");
+                astekoegunak.add("Larunbata");
+                astekoegunak.add("Igandea");
+
+                System.out.println("Aukeratu asteko eguna");
+                for (int j = 0; j < astekoegunak.size(); j++) {
+                    System.out.println((j + 1) + ". " + astekoegunak.get(j));
+                }
+                int aukera = sc.nextInt();
+                if (aukera < 1 || aukera > astekoegunak.size()) {
+                    System.out.println("Sartutako zenbakia baliogabea da");
+                    continue;
+                }
+
+                String astekoegunaaukeratuta = astekoegunak.get(aukera - 1);
+                System.out.println("Aukeratu duzu: " + astekoegunaaukeratuta);
+
+                // Aukeratu duzun eguneko filmak erakutsi
+
+                if (astekoegunaaukeratuta.equals("Astelehena")) {
+                    System.out.println(astekoegunaaukeratuta + "ko gelak eta pelikulak hauek dira:");
+                    System.out.println(gelenIzena.get(4) + ":");
+                    for (String p : komediagela)
+                        System.out.println("-" + p);
+
+                    System.out.println(gelenIzena.get(2) + ":");
+                    for (String p : thrillergela)
+                        System.out.println("-" + p);
+                } else if (astekoegunaaukeratuta.equals("Asteartea")) {
+
+                    System.out.println(astekoegunaaukeratuta + "ko gelak eta pelikulak hauek dira:");
+                    System.out.println(gelenIzena.get(0) + ":");
+                    for (String p : umeengela)
+                        System.out.println("- " + p);
+                    System.out.println(gelenIzena.get(1) + ":");
+                    for (String p : superheroigela)
+                        System.out.println("- " + p);
+
+                } else if (astekoegunaaukeratuta.equals("Asteazkena")) {
+                    System.out.println(astekoegunaaukeratuta + "ko gelak eta pelikulak hauek dira:");
+                    System.out.println(gelenIzena.get(3) + ":");
+                    for (String p : zientziafikziogela)
+                        System.out.println("- " + p);
+                    System.out.println(gelenIzena.get(2) + ":");
+                    for (String p : thrillergela)
+                        System.out.println("- " + p);
+
+                } else if (astekoegunaaukeratuta.equals("Osteguna")) {
+
+                    System.out.println(astekoegunaaukeratuta + "ko gelak eta pelikulak hauek dira:");
+                    System.out.println(gelenIzena.get(1) + ":");
+                    for (String p : superheroigela)
+                        System.out.println("- " + p);
+                    System.out.println(gelenIzena.get(4) + ":");
+                    for (String p : komediagela)
+                        System.out.println("- " + p);
+                } else if (astekoegunaaukeratuta.equals("Ostirala")) {
+                    System.out.println(astekoegunaaukeratuta + "ko gelak eta pelikulak hauek dira:");
+                    System.out.println(gelenIzena.get(0) + " :");
+                    for (String p : umeengela)
+                        System.out.println("- " + p);
+                    System.out.println(gelenIzena.get(3) + ": ");
+                    for (String p : zientziafikziogela)
+                        System.out.println("- " + p);
+                    System.out.println(gelenIzena.get(4) + ":");
+                    for (String p : komediagela)
+                        System.out.println("- " + p);
+
+                } else if (astekoegunaaukeratuta.equals("Larunbata")) {
+                    System.out.println(astekoegunaaukeratuta + "ko gelak eta pelikulak hauek dira:");
+                    System.out.println(gelenIzena.get(1) + ":");
+                    for (String p : superheroigela)
+                        System.out.println("- " + p);
+                    System.out.println(gelenIzena.get(2) + ":");
+                    for (String p : thrillergela)
+                        System.out.println("- " + p);
+                    System.out.println(gelenIzena.get(4) + ":");
+                    for (String p : komediagela)
+                        System.out.println("- " + p);
+
+                } else if (astekoegunaaukeratuta.equals("Igandea")) {
+                    System.out.println(astekoegunaaukeratuta + "ko gelak eta pelikulak hauek dira:");
+                    System.out.println(gelenIzena.get(0) + ":");
+                    for (String p : umeengela)
+                        System.out.println("- " + p);
+                    System.out.println(gelenIzena.get(4) + ":");
+                    for (String p : komediagela)
+                        System.out.println("- " + p);
+                }
+
+                // filma eta gela aukeratzeko gauza
+
+                System.out.println("Aukeratu filma");
+                System.out.println("Aukeratu gela");
+                for (int i = 0; i < gelenIzena.size(); i++) {
+                    System.out.println((i + 1) + "." + gelenIzena.get(i));
+                }
+                int aukeratutakogela = sc.nextInt() - 1;
+
+                if (aukeratutakogela < 0 || aukeratutakogela >= gelenIzena.size()) {
+                    System.out.println("Gela okerra");
+                    continue;
+                }
+
+                System.out.println("Aukeratu filma");
+                ArrayList<String> filmak = gelak.get(aukeratutakogela);
+                ArrayList<Integer> filmenstocka = gelenstocka.get(aukeratutakogela);
+                for (int i = 0; i < filmak.size(); i++) {
+                    System.out.println((i + 1) + "." + filmak.get(i) + "   Stock:" + filmenstocka.get(i) + ")");
+                }
+                int aukeratutakofilma = sc.nextInt() - 1;
+
+                if (aukeratutakofilma < 0 || aukeratutakofilma >= filmak.size()) {
+                    System.out.println("Filma okerra.");
+                    continue;
+                }
+
+                System.out.println("Zenbat sarrera nahi dituzu?");
+                int sarrerak = sc.nextInt();
+
+                if (sarrerak >= 1 && sarrerak <= filmenstocka.get(aukeratutakofilma)) {
+                    filmenstocka.set(aukeratutakofilma, filmenstocka.get(aukeratutakofilma) - sarrerak);
+                    System.out.println("Erosketa ondo egin da");
+                    System.out.println("Geratzen den stocka:" + filmenstocka.get(aukeratutakofilma));
+                } else {
+                    System.out.println("Sartutako sarrera kantitatea ez dugu disponible");
+                }
+
+            } else if (hasierakomenuaaukera.equals("Informazio orokorra")) {
+                ArrayList<String> informazioorokorra = new ArrayList<String>();
+                informazioorokorra.add(ANSI_CYAN + "Lilo y Stitch" + ANSI_RESET);
+                informazioorokorra.add(ANSI_CYAN + "Una pelicula de Minecraft" + ANSI_RESET);
+                informazioorokorra.add(ANSI_CYAN + "Mufasa:El rey leon" + ANSI_RESET);
+                informazioorokorra.add(ANSI_CYAN + "Como entrenar a tu dragon" + ANSI_RESET);
+                informazioorokorra.add(ANSI_CYAN + "Sonic 3: La pelicula" + ANSI_RESET);
+                informazioorokorra.add(ANSI_CYAN + "Blancanieves" + ANSI_RESET);
+                informazioorokorra.add(ANSI_GREEN + "Capitán América: Brave New World" + ANSI_RESET);
+                informazioorokorra.add(ANSI_GREEN + "Thunderbolt" + ANSI_RESET);
+                informazioorokorra.add(ANSI_RED + "Conclave" + ANSI_RESET);
+                informazioorokorra.add(ANSI_RED + "Misión: Imposible. Sentencia Final" + ANSI_RESET);
+                informazioorokorra.add(ANSI_RED + "Sirāt" + ANSI_RESET);
+                informazioorokorra.add(ANSI_YELLOW + "Wolfgang" + ANSI_RESET);
+                informazioorokorra.add(ANSI_PURPLE + "Padre no hay más que uno 5" + ANSI_RESET);
+                informazioorokorra.add(ANSI_PURPLE + "El casoplon" + ANSI_RESET);
+                informazioorokorra.add(ANSI_PURPLE + "Un funeral de locos" + ANSI_RESET);
+
+                System.out.println("Hau(ek) dira gaurko filmak:");
+                for (String filma : informazioorokorra) {
+                    System.out.println("- " + filma);
+                }
+                System.out.println("Filma kopurua: " + informazioorokorra.size());
+                System.out.println("Gela kopurua: " + gelak.size());
+                System.out.println("Gelen izenak:");
+                for (String izena : gelenIzena) {
+                    System.out.println("- " + izena);
+                }
+
+            } else if (hasierakomenuaaukera.equals("Kokapena")) {
+                System.out.println("Kokapena:");
+                System.out.println("CINESA URBIL, Bo. Txiki-Erdi, 7, 20170 Usurbil, Gipuzkoa");
+                System.out.println("Google Maps: https://maps.app.goo.gl/49cqJqFQa9R3NaGV6");
+
+            } else if (hasierakomenuaaukera.equals("Ordutegia")) {
+                System.out.println("Informazioa");
+                System.out.println("Asteleheneko ordutegia: 16:00 - 22:00");
+                System.out.println("Astearteko ordutegia: 16:00 - 23:00");
+                System.out.println("Asteazkeneko ordutegia: 16:00 - 23:00");
+                System.out.println("Osteguneko ordutegia: 16:00 - 23:00");
+                System.out.println("Ostiraleko ordutegia: 16:00 - 00:00");
+                System.out.println("Larunbateko ordutegia: 15:00 - 00:00");
+                System.out.println("Igandeko ordutegia: 15:00 - 23:00");
+
+            } else if (hasierakomenuaaukera.equals("Itxi")) {
+                programaMartxan = false;
+                System.out.println("Agur!");
+            }
+        }
+        sc.close();
+    }
 }
