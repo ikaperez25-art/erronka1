@@ -63,6 +63,53 @@
       background-color: #222;
       transform: scale(1.05);
     }
+    .Estrenoak {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      padding: 0 20px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .film-item {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+    }
+    
+    .film-imagen {
+      width: 200px;
+      height: 300px;
+      flex-shrink: 0;
+    }
+    
+    .film-imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .film-imagen img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+    
+    .film-info {
+      padding-left: 20px;
+      flex-grow: 1;
+    }
+    
+    .film-titulua {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
 
     </style>
 </head>
@@ -75,6 +122,46 @@
       </a>
     </section>
   </header>
+  <section class="Estrenoak">
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma1.png" alt="Expediente Warren: Azken Erritoa">
+      </div>
+      
+        <h3> Warren: Azken Erritoa</h3>
+        <br>
+        <br>
+        <details><p>2025eko irailaren 5ean</p></details>
+            
+      </div>
+    
+       <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma2.png" alt="Una batalla tras otra">
+      </div>
+     
+        <h3>Una batalla tras otra</h3>
+        <br>
+        <br>
+        <details><p>2025eko irailaren 26an</p></details>
+            
+      </div>
+
+    
+       <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma7.png" alt="Strangers 2">
+      </div>
+
+        <h3>Strangers 2</h3>
+        <br>
+        <br>
+        <details><p>2025eko irailaren 26an</p></details>
+            
+     
+    </div>
+    
+  </section>
     <main>
 
     </main>
