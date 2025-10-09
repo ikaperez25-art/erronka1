@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ares Perez">
+  <meta name="description" content="Zinema Usurbil webgunea-Balorazioak">
+  <title>Zinema Usurbil - Balorazioak</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .atzerakobotoia {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #444;
+      color: white;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 1000;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .atzerakobotoia:hover {
+      background-color: #666;
+      transform: scale(1.05);
+    }
+    
+    .material-icons {
+      font-size: 26px;
+      color: white;
+    }
+    
+    header {
+      text-align: center;
+      padding: 40px 20px 20px 20px;
+      background: linear-gradient(135deg, #777, #555);
+      color: white;
+      margin-bottom: 30px;
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+    
+    .filmenbalorazioak {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      padding: 0 20px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .film-item {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+    }
+    
+    .film-imagen {
+      width: 200px;
+      height: 300px;
+      flex-shrink: 0;
+    }
+    
+    .film-imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .film-imagen img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+    
+    .film-info {
+      padding-left: 20px;
+      flex-grow: 1;
+    }
+    
+    .film-titulua {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 40px 20px 20px 20px;
+      background: linear-gradient(135deg, #777, #555);
+      font-size: 0.9rem;
+      color: #ffffff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Balorazioak</h1>
+    <section>
+      <a href="portada.html" class="atzerakobotoia">
+        <span class="material-icons">arrow_back</span>
+      </a>
+    </section>
+  </header>
+  
+  <section class="filmenbalorazioak">
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma1.png" alt="Expediente Warren: Azken Erritoa">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulo">Expediente Warren: Azken Erritoa</h3>
+             <p>Balorazioak</p>
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma2.png" alt="Una Batalla Tras Otra">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Una Batalla Tras Otra</h3>
+      <p>Balorazioak</p>
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma3.png" alt="Cautivo">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Cautivo</h3>
+           <p>Balorazioak</p>
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma4.png" alt="Kimetsu no Yaiba: La Fortaleza Infinita">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Kimetsu no Yaiba: La Fortaleza Infinita</h3>
+              <p>Balorazioak</p>
+
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma5.png" alt="Cuidado con lo que Dibujas">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Cuidado con lo que Dibujas</h3>
+       <p>Balorazioak</p>
+       
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma6.png" alt="Avatar: El Sentido del Agua">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Avatar: El Sentido del Agua</h3>
+       <p>Balorazioak</p>
+     
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma7.png" alt="Strangers 2">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Strangers 2</h3>
+       <p>Balorazioak</p>
+        
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma8.png" alt="Afterburn">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Afterburn</h3>
+       <p>Balorazioak</p>
+       
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma9.png" alt="Cómo Entrenar a tu Dragón">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Cómo Entrenar a tu Dragón</h3>
+       <p>Balorazioak</p>
+        
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma10.png" alt="Los 4 Fantásticos">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Los 4 Fantásticos</h3>
+       <p>Balorazioak</p>
+       
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma11.png" alt="Star Wars: The Force Awakens">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Star Wars: The Force Awakens</h3>
+       <p>Balorazioak</p>
+       
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma12.png" alt="Dark Phoenix">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Dark Phoenix</h3>
+       <p>Balorazioak</p>
+      
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma13.png" alt="Logan">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Logan</h3>
+       <p>Balorazioak</p>
+        
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma14.png" alt="Celda 211">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Celda 211</h3>
+       <p>Balorazioak</p>
+     
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma15.png" alt="Fractured">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Fractured</h3>
+       <p>Balorazioak</p>
+     
+      </div>
+    </div>
+    
+    <div class="film-item">
+      <div class="film-imagen">
+        <img src="img/filmenargazkiak/filma16.png" alt="Pulp Fiction">
+      </div>
+      <div class="film-info">
+        <h3 class="film-titulua">Pulp Fiction</h3>
+       <p>Balorazioak</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Zinema Usurbil - Ares Perez</p>
+  </footer>
+</body>
+</html>
